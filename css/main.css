@@ -9,13 +9,17 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-.content {
+#page-home {
+  background: url("../assets/home-background.svg");
+}
+
+#page-home .content {
   margin: 0 auto;
   width: 90%;
   max-width: 1100px;
 }
 
-header {
+#page-home header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
