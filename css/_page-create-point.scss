@@ -1,0 +1,23 @@
+#page-create-point {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    header {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            display: flex;
+            color: $font-color;
+            font-weight: 700;
+            &::before {
+                content: '';
+                margin-right: 16px;
+                background: url(../assets/arrow-left.svg) 100%;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
