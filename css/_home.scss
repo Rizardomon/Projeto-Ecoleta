@@ -1,13 +1,74 @@
 #page-home {
-    background: url('../assets/home-background.svg');
+    height: 100vh;
+    background: url('../assets/home-background.svg') no-repeat;
+    background-position: 35vw bottom;
     .content {
         margin: 0 auto;
         width: 90%;
+        height: 100%;
         max-width: 1100px;
+        display: flex;
+        flex-direction: column;
     }
     header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-top: 48px;
+        a {
+            display: flex;
+            color: $font-color;
+            font-weight: 700;
+            &::before {
+                content: '';
+                margin-right: 16px;
+                background-image: url(../assets/log-in.svg);
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    main {
+        max-width: 560px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+            font-size: 54px;
+        }
+        p {
+            font-size: 24px;
+            line-height: 38px;
+            margin-top: 24px;
+        }
+        a {
+            width: 100%;
+            height: 72px;
+            max-width: 360px;
+            margin-top: 40px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            background-color: $primary-color;
+            transition: 400ms;
+            color: white;
+            strong {
+                flex: 1;
+                text-align: center;
+            }
+            &:hover {
+                background-color: #2fb86e;
+            }
+            &::before {
+                content: '';
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                width: 72px;
+                height: 72px;
+                background-color: rgba(0, 0, 0, 0.08) !important;
+                background: url(../assets/search.svg) no-repeat 50%;
+            }
+        }
     }
 }

@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+$font-color: #322153;
+$primary-color: #34cb79;
 html {
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $font-color;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
