@@ -26,5 +26,62 @@
         padding: 65px;
         border-radius: 8px;
         max-width: 730px;
+        h1 {
+            font-size: 36px;
+        }
+        fieldset {
+            margin-top: 64px;
+            border: 0;
+        }
+        legend {
+            margin-bottom: 40px;
+            h2 {
+                font-size: 24px;
+            }
+        }
+        .field-group {
+            display: flex;
+        }
+        .field {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            margin-bottom: 24px;
+            +.field {
+                margin-left: 24px;
+            }
+        }
+        input,
+        select {
+            background-color: #f0f0f5;
+            border: 0;
+            border-radius: 8px;
+            padding: 16px 24px;
+            font-size: 16px;
+            outline: none;
+        }
+        select {
+            appearance: none;
+        }
+        label {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        button {
+            width: 260px;
+            height: 56px;
+            background-color: $primary-color;
+            border-radius: 8px;
+            border: 0;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 40px;
+            transition: background-color 300ms;
+            &:hover {
+                cursor: pointer;
+                background-color: #2fb86e;
+            }
+        }
     }
 }

@@ -56,10 +56,12 @@
                         <select name="uf">
                             <option value="">Selecione o Estado</option>
                         </select>
+
+                        <input type="hidden" name="state">
                     </div>
                     <div class="field">
                         <label for="city">Cidade</label>
-                        <select name="city">
+                        <select name="city" disabled>
                             <option value="">Selecione a Cidade</option>
                         </select>
                     </div>
@@ -67,7 +69,7 @@
 
             </fieldset>
 
-            <fieldset>
+            <!-- <fieldset>
 
                 <legend>
                     <h2>
@@ -75,7 +77,7 @@
                     </h2>
                 </legend>
 
-            </fieldset>
+            </fieldset> -->
 
             <button type="submit">
                 Cadastrar ponto de coleta
@@ -84,6 +86,8 @@
         </form>
 
     </div>
+
+    <script src="scripts/create-point.js"></script>
 
 </body>
 
