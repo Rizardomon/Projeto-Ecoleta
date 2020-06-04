@@ -143,6 +143,100 @@ a {
   background: url(../assets/search.svg) no-repeat 50%;
 }
 
+#modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0e0a14ef;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+#modal .content {
+  color: white;
+  width: 420px;
+}
+
+#modal .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+#modal .header a {
+  background-image: url("../assets/x.svg");
+  width: 20px;
+  height: 20px;
+  font-size: 0.01px;
+}
+
+#modal .header h1 {
+  color: white;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+#modal form label {
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+#modal form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#modal form input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #f0f0f5;
+  border-radius: 8px 0 0 8px;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  color: #6c6c80;
+  outline: none;
+}
+
+#modal form button {
+  width: 72px;
+  height: 72px;
+  background-color: #34cb79;
+  border: 0;
+  border-radius: 0 8px 8px 0;
+  outline: none;
+}
+
+#modal form button:hover {
+  background-color: #2fb85e;
+  cursor: pointer;
+}
+
+.hide {
+  display: none !important;
+}
+
 @media (max-width: 900px) {
   #page-home {
     background-position-x: 70vw;
