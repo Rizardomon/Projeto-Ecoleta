@@ -30,7 +30,7 @@ a {
 
 #page-home {
   height: 100vh;
-  background: url("../assets/home-background.svg") no-repeat;
+  background: url("../../assets/home-background.svg") no-repeat;
   background-position: 35vw bottom;
 }
 
@@ -72,7 +72,7 @@ a {
 #page-home header a::before {
   content: '';
   margin-right: 16px;
-  background-image: url(../assets/log-in.svg);
+  background-image: url(../../assets/log-in.svg);
   width: 20px;
   height: 20px;
 }
@@ -140,7 +140,7 @@ a {
   width: 72px;
   height: 72px;
   background-color: rgba(0, 0, 0, 0.08) !important;
-  background: url(../assets/search.svg) no-repeat 50%;
+  background: url(../../assets/search.svg) no-repeat 50%;
 }
 
 #modal {
@@ -181,7 +181,7 @@ a {
 }
 
 #modal .header a {
-  background-image: url("../assets/x.svg");
+  background-image: url("../../assets/x.svg");
   width: 20px;
   height: 20px;
   font-size: 0.01px;

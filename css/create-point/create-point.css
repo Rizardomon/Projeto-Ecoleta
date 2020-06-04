@@ -58,7 +58,7 @@ a {
 #page-create-point header a::before {
   content: '';
   margin-right: 16px;
-  background: url(../assets/arrow-left.svg) 100%;
+  background: url(../../assets/arrow-left.svg) 100%;
   width: 20px;
   height: 20px;
 }

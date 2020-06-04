@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #f0f0f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #322153;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 260px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: -1;
+}
+
+#page-search-results {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#page-search-results header {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page-search-results header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #322153;
+  font-weight: 700;
+}
+
+#page-search-results header a::before {
+  content: '';
+  margin-right: 16px;
+  background: url(../../assets/arrow-left.svg) 100%;
+  width: 20px;
+  height: 20px;
+}
+
+#page-search-results main {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+#page-search-results main h4 {
+  font-weight: normal;
+  margin-bottom: 32px;
+}
+
+#page-search-results main .cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+#page-search-results main .card h1 {
+  margin-top: 32px;
+  font-size: 36px;
+  line-height: 41px;
+}
+
+#page-search-results main .card h3 {
+  margin: 24px 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+  color: #34cb79;
+}
+
+#page-search-results main .card p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c80;
+}
+
+#page-search-results main img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 900px) {
+  #page-search-results main .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #page-search-results main img {
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=search-results.css.map */
