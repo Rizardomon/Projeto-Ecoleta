@@ -1,0 +1,22 @@
+{
+    "name": "nlw",
+    "version": "1.0.0",
+    "description": "Aplicação para busca de pontos de coleta de lixo",
+    "main": "src/server.js",
+    "scripts": {
+        "start": "node src/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Rizardomon/Ecoleta.git"
+    },
+    "author": "Richard Robinson",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Rizardomon/Ecoleta/issues"
+    },
+    "homepage": "https://github.com/Rizardomon/Ecoleta#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
