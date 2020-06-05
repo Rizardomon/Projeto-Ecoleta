@@ -81,11 +81,26 @@ a {
 }
 
 #page-create-point form legend {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 40px;
 }
 
 #page-create-point form legend h2 {
   font-size: 24px;
+}
+
+#page-create-point form legend span {
+  font-size: 14px;
+  color: #322153;
 }
 
 #page-create-point form .field-group {
@@ -206,5 +221,17 @@ a {
 #page-create-point form button:hover {
   cursor: pointer;
   background-color: #2fb86e;
+}
+
+@media (max-width: 900px) {
+  #page-create-point .field-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #page-create-point .field-group .field + .field {
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=create-point.css.map */

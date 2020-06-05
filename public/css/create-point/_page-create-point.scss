@@ -34,9 +34,17 @@
             border: 0;
         }
         legend {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             margin-bottom: 40px;
             h2 {
                 font-size: 24px;
+            }
+            span {
+                font-size: 14px;
+                color: $font-color;
             }
         }
         .field-group {
