@@ -1,5 +1,5 @@
 {
-    "name": "Ecoleta",
+    "name": "ecoleta",
     "description": "Aplicação para busca de pontos de coleta de lixo",
     "main": "src/server.js",
     "scripts": {
