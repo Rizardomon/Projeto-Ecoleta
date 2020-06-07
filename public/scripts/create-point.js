@@ -62,7 +62,7 @@ function handleSelectedItem(event) {
 
     const itemId = itemLi.dataset.id
 
-    // verificar se existe itens selecionados, 
+    // verificar se existe itens selecionados,
     // se sim pegar os itens selecionados
     const alredySelected = selectedItems.findIndex(item => item == itemId)
 
